@@ -1,0 +1,234 @@
+/*Copy and paste all this into "style" in anki*/
+/*Reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*Code beginning*/
+
+:root {
+    --front-background: #ffffff;
+    --font-color-front: #000000;
+    --border-color-front: rgba(59,59,64,1) 25%, rgba(53,154,242,1) 50%, rgba(4,217,157,1) 75%, rgba(159,242,99,1) 100%;
+    --back-background: #3B3B40;
+    --font-color-back: #ffffff;
+    --border-color-back: rgba(4,217,157,1) 0%, rgba(159,242,99,1) 100%;
+    --especial-font: #04D99D;
+    --box-shadow: #CCCCCC;
+}
+
+.cards {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    letter-spacing: 0.19em;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 5em;
+    gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(12, 30px);
+}
+
+.especial__container {
+    color: var(--especial-font);  
+}
+
+/* Front Card */
+
+.elements__front {
+    color: var(--font-color-front);
+    width: 27vw;
+    height: 570px;
+    padding: 1vw;
+    border: double 1px transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--front-background), var(--front-background)), radial-gradient(circle at top left, var(--border-color-front));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 20px 35px var(--box-shadow);
+}
+
+.item__front1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 25vw;
+    padding-left: 7px;
+    padding-top: 10px;
+}
+
+.item__front2 {
+    grid-row-start: 4;
+    grid-row-end: 8;
+    width: 25vw;
+    padding-left: 7px;
+}
+
+.item__front3 {
+    grid-row-start: 8;
+    grid-row-end: 12;
+    width: 25vw;
+    padding-left: 7px;
+}
+
+.item__front4 {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    width: 25vw;
+    padding-left: 7px;
+}
+
+/* Back Card */
+
+.elements__back {
+    color: var(--font-color-back);
+    width: 27vw;
+    height: 570px;
+    padding: 1vw;
+    border: double 1px transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--back-background), var(--back-background)), radial-gradient(circle at top left, var(--border-color-back));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 20px 35px var(--box-shadow);
+    grid-area: back;
+}
+
+.item__back1 {
+    width: 25vw;
+    padding-left: 7px;
+    padding-top: 10px;
+}
+
+.item__back2 {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    width: 25vw;
+    padding-left: 7px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .cards {
+        display: block;
+        margin-top: 0;
+    }
+
+    .container {
+        display: block;
+    }
+
+    /* Front Card Mobile */
+
+    .elements__front {
+        padding: 15px;
+		height: 80%;
+        margin: 0;
+        width: auto;
+        background-color: var(--back-background);
+        color: var(--font-color-back);
+    }
+
+    .item__front1 {
+        width: 90%;
+        padding-left: 5px;
+        padding-top: 5px;
+        word-wrap: break-word;
+    }
+    
+    .item__front2 {
+        width: auto;
+        padding-left: 5px;
+        padding-top: 15px;
+        word-wrap: break-word;
+    }
+    
+    .item__front3 {
+        width: auto;
+        padding-left: 5px;
+        padding-top: 15px;
+        word-wrap: break-word;
+    }
+    
+    .item__front4 {
+        width: 90%;
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        word-wrap: break-word;
+    }
+
+    /* Back Card Mobile */
+
+    .elements__back {
+        padding: 15px;
+		height: 20%;
+        margin: 0;
+        width: auto;
+        background-color: var(--front-background);
+        color: var(--font-color-front);
+    }
+
+    .item__back1 {
+        width: 90%;
+        padding-left: 5px;
+        padding-top: 15px;
+        word-wrap: break-word;
+    }
+
+    .item__back2 {
+        width: 90%;
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        word-wrap: break-word;
+    }
+}
