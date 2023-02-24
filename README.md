@@ -1,23 +1,20 @@
 # Custom-anki-card-for-language-studies
+
+> Status: Completed✔️
+
 Custom Anki card made for language studies like english and others!
 
 Just go to "cards for anki" folder, copy the code inside and do in the way described below.
 
 First of all, you need to go to "tools", "manage note types", "fields", now you must create the properties:
 <ol>
-<strong>1. Sentence
-  <br>
-2. Audio
-  <br>
-3. Meaning
-  <br>
-4. Synonyms
-  <br>
-5. Word
-  <br>
-6. Sentence-translation
-  <br>
-7. Word-translation</strong>
+<strong><li>Sentence
+        <li>Audio</li>
+        <li>Meaning</li>
+        <li>Synonyms</li>
+        <li>Word</li>
+        <li>Sentence-translation</li>
+        <li>Word-translation</strong></li>
 </ol>
 NOTE: all properties must be in CapsLock<br>
 
@@ -25,6 +22,12 @@ To apply the code, open anki, go to "tools", "manage note types", select the not
 
 The final design will look like this:
 
+![card-image](https://user-images.githubusercontent.com/85968341/221302157-cd13be59-15d4-40ed-9f67-c0698a29b758.png)
 
+## Features
 
-Also, if you don't want to use all the properties, just put "word" and "word-translation" and the card will work normally.
+<ul>
+  <li>If you don't want to use all the properties, just put "word" and "word-translation" and the card will work normally.</li>
+  <li>If you want to change the colors, look for ":root" there, you can change the variables with the colors you want</li>
+  <li>The card has also a mobile version</li>
+</ul>
