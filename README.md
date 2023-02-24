@@ -16,7 +16,7 @@ First of all, you need to go to "tools", "manage note types", "fields", now you 
         <li>Sentence-translation</li>
         <li>Word-translation</strong></li>
 </ol>
-NOTE: all properties must be in CapsLock<br>
+<strong>NOTE: all properties must be in CapsLock</strong>
 
 To apply the code, open anki, go to "tools", "manage note types", select the note you want to change and go to cards, just apply the front, back and styles in their places.
 
