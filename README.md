@@ -2,9 +2,9 @@
 
 > Status: Completed✔️
 
-Custom Anki card made for language studies like english and others!
+<p>Custom Anki card made for language studies like english and others!</p>
 
-Just go to "cards for anki" folder, copy the code inside and do in the way described below.
+<p>Just go to "cards for anki" folder, copy the code inside and do in the way described below.</p>
 
 First of all, you need to go to "tools", "manage note types", "fields", now you must create the properties:
 <ol>
@@ -16,7 +16,7 @@ First of all, you need to go to "tools", "manage note types", "fields", now you 
         <li>Sentence-translation</li>
         <li>Word-translation</strong></li>
 </ol>
-<strong>NOTE: all properties must be in CapsLock</strong>
+<p><strong>NOTE: all properties must be in CapsLock</strong></p>
 
 To apply the code, open anki, go to "tools", "manage note types", select the note you want to change and go to cards, just apply the front, back and styles in their places.
 
