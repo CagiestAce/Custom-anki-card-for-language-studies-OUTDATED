@@ -6,7 +6,7 @@
 
 <p>Just go to "cards for anki" folder, copy the code inside and do in the way described below.</p>
 
-First of all, you need to go to "tools", "manage note types", "fields", now you must create the properties:
+First of all, with anki open, you need to go to "tools", "manage note types", "fields", now you must create the properties:
 <ol>
 <strong><li>Sentence
         <li>Audio</li>
@@ -18,7 +18,7 @@ First of all, you need to go to "tools", "manage note types", "fields", now you 
 </ol>
 <p><strong>NOTE: all properties must be in CapsLock</strong></p>
 
-To apply the code, open anki, go to "tools", "manage note types", select the note you want to change and go to cards, just apply the front, back and styles in their places.
+To apply the code, open anki, go to "tools", "manage note types", select the note you want to change and go to cards, just apply the front, back and style in their places.
 
 The final design will look like this:
 
