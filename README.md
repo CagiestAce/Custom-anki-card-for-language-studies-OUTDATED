@@ -1,6 +1,6 @@
 # Custom-anki-card-for-language-studies
 
-> Status: Completed✔️
+> Status: OUTDATED❌
 
 <p>Custom Anki card made for language studies like english and others!</p>
 
